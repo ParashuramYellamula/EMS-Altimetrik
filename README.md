@@ -2,6 +2,6 @@
 
 #User WorkFlow
 Election Result
-![alt](./ReadMe Images/Election Result.jpg)
+![alt](./Images/Election Result.jpg)
 
 #Election Commissioner WorkFlow
