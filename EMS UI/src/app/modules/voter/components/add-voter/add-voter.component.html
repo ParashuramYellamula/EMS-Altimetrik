@@ -1,0 +1,21 @@
+<div class="modal-body p-5">
+    <div class="text-xxxl font-wght-900 text-center f-lato mt-3 mb-3">Voter Details</div>
+    <form [formGroup]="addVoterForm" (ngSubmit)="addVoterDetails(addVoterForm)">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">First Name</label>
+        <input type="text" placeholder="John" formControlName="firstName">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Last Name</label>
+        <input type="text" placeholder="John" formControlName="lastName">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Aadhar</label>
+        <input type="text" placeholder="John" formControlName="aadhar">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Mobile</label>
+        <input type="text" placeholder="John" formControlName="mobile">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Email</label>
+        <input type="text" placeholder="John" formControlName="email">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Address</label>
+        <input type="text" placeholder="John" formControlName="address">
+        <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Date Of Birth</label>
+        <input type="text" placeholder="98765433456" formControlName="dateofBirth">
+        <button class="btn btn-primary-rounded btn-block mt-3 w-100 mx-auto" [disabled]="!addVoterForm.valid">Register Voter</button>
+        <p class = "text-light mx-auto text-center pointer mt-3" (click)="cancel()">Cancel</p>
+    </form>
+</div>

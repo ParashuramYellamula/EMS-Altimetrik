@@ -1,0 +1,20 @@
+<ng-template #logout let-modal>
+    <div class="modal-body p-3">
+        <div class="font-wght-900 text-xxxl text-center text-dark f-lato pt-4">Logout Now</div>
+        <p class="text-secondary mt-4 text-center text-xl f-openSans op-7 pt-3">Click to Logout From EMS.</p>
+        <div class="d-flex justify-content-center mb-4">
+            <p class="text-secondary mt-3 mr-14 pl-4 pr-4 text-lg font-wght-700 pointer" (click)="cancel()">Cancel</p>
+            <p class="text-primary mt-3 pl-4 pr-4 text-lg font-wght-700 pointer" (click)="userLogout()">Logout</p>
+        </div>
+    </div>
+</ng-template>
+<div class="d-flex justify-content-between align-items-center nav-head">
+    <div class="font-wght-400 text-xxxl-1">Election Management System</div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="vote">Vote</a>
+        </li>
+      </ul>
+    <i class="fas fa-sign-out text-xl-1" (click)="openLogoutModal(logout)"></i>
+</div>
+<router-outlet></router-outlet>

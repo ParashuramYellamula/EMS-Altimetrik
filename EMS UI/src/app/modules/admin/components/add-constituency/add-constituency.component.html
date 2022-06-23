@@ -1,0 +1,13 @@
+<div class="modal-body p-5">
+  <div class="text-xxxl font-wght-900 text-center f-lato mt-3 mb-3">Constituency Details</div>
+  <form [formGroup]="addConstituencyForm" (ngSubmit)="addConstituencyDetails(addConstituencyForm)">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Constituency Name</label>
+      <input type="text" placeholder="Nalgonda" formControlName="constituencyName">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">State</label>
+      <input type="text" placeholder="Telangana" formControlName="state">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Current Member</label>
+      <input type="text" placeholder="Dinesh" formControlName="currentMember">
+      <button class="btn btn-primary-rounded btn-block mt-3 w-100 mx-auto" [disabled]="!addConstituencyForm.valid">Add Constituency</button>
+      <p class = "text-light mx-auto text-center pointer mt-3" (click)="cancel()">Cancel</p>
+  </form>
+</div>

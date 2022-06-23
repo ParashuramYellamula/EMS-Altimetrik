@@ -1,0 +1,27 @@
+.text-secondary {
+    color: #7C7C7C !important;
+}
+.text-light {
+    color: #929090 !important;
+}
+.text-dark {
+    color: #333333 !important;
+}
+.text-danger {
+    color:#EB5500 !important;
+}
+.bg-light {
+    background: #F2F2F2 !important;
+}
+.primary-bg-blue {
+    background: #3b8de0;
+}
+.primary-bg-yel {
+    background: #FDB32E;
+}
+.primary-text-blue {
+    color:#066CD1;
+}
+.primary-text-yel {
+    color:#FDB32E;
+}

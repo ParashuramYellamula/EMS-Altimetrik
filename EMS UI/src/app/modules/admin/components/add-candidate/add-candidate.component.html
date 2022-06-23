@@ -1,0 +1,15 @@
+<div class="modal-body p-5">
+  <div class="text-xxxl font-wght-900 text-center f-lato mt-3 mb-3">Candidate Details</div>
+  <form [formGroup]="addCandidateForm" (ngSubmit)="addCandidateDetails(addCandidateForm)">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Name</label>
+      <input type="text" placeholder="John" formControlName="name">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Party</label>
+      <input type="text" placeholder="BJP" formControlName="party">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Constituency</label>
+      <input type="text" placeholder="Delhi" formControlName="constituency">
+      <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato">Address</label>
+      <input type="text" placeholder="Delhi" formControlName="address">
+      <button class="btn btn-primary-rounded btn-block mt-3 w-100 mx-auto" [disabled]="!addCandidateForm.valid">Create Candidate</button>
+      <p class = "text-light mx-auto text-center pointer mt-3" (click)="cancel()">Cancel</p>
+  </form>
+</div>

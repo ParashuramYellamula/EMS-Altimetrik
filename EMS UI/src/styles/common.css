@@ -1,0 +1,23 @@
+html,
+body {
+    height: 100%;
+}
+body {
+    margin             : 0;
+    padding            : 0;
+    font-family        : 'Source Sans Pro', sans-serif !important;
+    overflow           : hidden;
+    background: linear-gradient(179.57deg, #F4F5FB 0.39%, #F8F8F8 99.64%);
+    backdrop-filter: blur(59px);
+}
+.signup-card {
+    width: 35%;
+    height:auto;
+    padding:2% 4% 2% 4% !important
+}
+.mr-14{
+    margin-right: 14px;
+}
+.pointer{
+    cursor:pointer;
+}

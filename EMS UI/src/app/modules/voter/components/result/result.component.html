@@ -1,0 +1,30 @@
+<div class="modal-body p-5">
+  <div class="text-xxxl font-wght-900 text-center f-lato mt-3 mb-3">Election Result</div>
+ 
+  <form [formGroup]="castVoteForm" >
+    <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato p-3">Constituency:     </label>
+    <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato p-3">{{constituency}}</label>
+    <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato p-3">Winner:     </label>
+    <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato p-3">{{candidate}}</label>
+    <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato p-3">Total Votes:     </label>
+    <label class="text-left mb-0 text-dark font-wght-700 text-md f-lato p-3">{{max}}</label>
+    <div class="table-responsive table-height">
+      <table class="table table-borderless">
+        <thead>
+          <tr>
+            <th class="text-dark font-wght-900 text-md" *ngFor="let col of displayedColumns; let i = index">{{col}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of dataSource | filter : searchName">
+            <td class="text-secondary font-wght-600 text-md">{{user.candidate}}</td>
+            <td class="text-secondary font-wght-600 text-md">{{user.party}}</td>
+            <td class="text-secondary font-wght-600 text-md"> <img class="img" src="../../../../../assets/images/{{user.symbol}}" alt=""></td>
+            <td class="text-secondary font-wght-600 text-md">{{user.votes}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+      <p class = "text-light mx-auto text-center pointer mt-3" (click)="cancel()">Cancel</p>
+  </form>
+</div>

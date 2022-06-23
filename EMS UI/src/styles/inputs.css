@@ -1,0 +1,117 @@
+input[type="text"], input[type="password"], input[type="number"],input[type="email"], textarea {
+    width: 100%;
+    border: 1px solid #F2F2F2 !important;
+    background: #F2F2F2 !important;
+    border-radius: 10px;
+    border-radius: 4px;
+    margin: 8px 0;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    color: #949494 !important;
+  }
+  
+  input[type="text"]:focus, input[type="password"]:focus, input[type="number"]:focus {
+    border-color: #3b8de0;
+    box-shadow: 0 0 8px 0 #3b8de0;
+  }
+  
+  .export input[type="text"]:focus{
+    border: 1px solid #DDDDDD !important;
+    box-shadow: none;
+  }
+  
+  textarea:focus {
+    border-color: #3b8de0;
+    box-shadow: 0 0 8px 0 #3b8de0;
+  }
+  
+  .inputWithIcon input[type="text"], .inputWithIcon textarea, .inputWithIcon input[type="password"] {
+    padding-left: 40px;
+  }
+  
+  .inputWithIcon {
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+  }
+  
+  .inputWithIcon i {
+    position: absolute;
+    left: 0;
+    top: 22%;
+    padding: 9px 12px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .inputWithIcon img {
+    position: absolute;
+    left: 0;
+    top: 22%;
+    padding: 9px 12px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon i.right-align {
+    position: absolute;
+    right: 0;
+    left: unset !important;
+    top: 25%;
+    padding: 9px 36px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon img.right-align {
+    position: absolute;
+    right: 0;
+    left: unset !important;
+    top: 14%;
+    padding: 9px 16px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithSearchIcon i {
+    position: absolute;
+    right: 0;
+    top: 22%;
+    padding: 9px 30px 9px 0px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  .inputWithSearchIcon {
+    position: relative;
+    width: 100%;
+    margin:0 auto;
+  }
+  
+  .textarea i {
+    position: absolute;
+    left: 0;
+    top: 9%;
+    padding: 9px 12px;
+    color: #aaa;
+    transition: 0.3s;
+  }
+  
+  .inputWithIcon input[type="text"]:focus + i, textarea:focus + i, input[type="password"]:focus + i {
+    color: #7C7C7C;
+  }
+  .export input[type="text"]:focus + i {
+    color: #aaa;
+  }
+  .otp-input {
+    background-color: #F2F2F2 !important;
+    border:none !important;
+    font-size: 16px !important;
+    color:#949494 !important;
+    font-weight: 600;
+    border-radius: 5px !important;
+  }
+  .select-height {
+    height: 40px !important;
+  }
+  

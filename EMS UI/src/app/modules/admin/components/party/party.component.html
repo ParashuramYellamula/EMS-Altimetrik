@@ -1,0 +1,44 @@
+<ng-template #add let-modal>
+  <app-add-party (addParty)="addedParty()" (close)="closeModal()"></app-add-party>
+</ng-template>
+<div class="card br-4 m-5">
+  <div class="row p-4">
+      <div class="col-md-7 my-auto">
+          <div class="font-wght-700 text-xxxl">Party Details</div>
+      </div>
+      <div class="col-md-5">
+          <div class="row float-right">
+              <div class="pr-3 col-md-6">
+                  <div class="inputWithSearchIcon">
+                      <input type="text" placeholder="Search" [(ngModel)]="searchName" (ngModelChange)="search()">
+                      <i class="fa fa-search fa-lg fa-fw" aria-hidden="true"></i>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                <button class="btn btn-primary d-flex align-items-center justify-content-center w-100 font-wght-700 h-40 text-sm" (click)="openModal(add)">
+                  <i class="fas fa-plus mr-14"></i>
+                  Register Party
+                </button>
+              </div>
+          </div>
+      </div>
+  </div>
+  <hr class="mt-0 mb-0">
+  <div class="table-responsive table-height">
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th class="text-dark font-wght-900 text-md" *ngFor="let col of displayedColumns; let i = index">{{col}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let user of dataSource | filter : searchName">
+          <td class="text-secondary font-wght-600 text-md">{{user.name}}</td>
+          <td class="text-secondary font-wght-600 text-md">{{user.description}}</td>
+          <td class="text-secondary font-wght-600 text-md">{{user.address}}</td>
+          <td class="text-secondary font-wght-600 text-md"> <img class="img" src="../../../../../assets/images/{{user.symbol}}" alt=""></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
